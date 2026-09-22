@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro Run 3D</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div class="brand">Metro Run 3D</div>
+        <div class="stats">
+          <span>Score: <strong id="score">0</strong></span>
+          <span>Passengers: <strong id="passengers">0</strong></span>
+          <span>Fuel: <strong id="fuel">100%</strong></span>
+          <span>Time: <strong id="time">00:00</strong></span>
+        </div>
+      </div>
+      <canvas id="gameCanvas" width="960" height="540" aria-label="Bus simulation game"></canvas>
+      <div class="controls">
+        <div>Drive: ← → / A D</div>
+        <div>Speed: ↑ ↓ / W S</div>
+        <div>Space = Brake</div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
